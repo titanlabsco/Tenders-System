@@ -12,34 +12,36 @@ const TeamSection: React.FC = () => {
     {
       name: 'Josué Brenes',
       role: 'Co-founder',
-      role2: 'FE Developer',
-      image: '/img/brenes.png'
+      role2: 'Frontend Developer',
+      image: '/img/brenes.jpg'
     },
     {
       name: 'Randall Valenciano',
       role: 'Co-founder',
-      role2: 'FS Developer',
-      image: '/img/randall.png'
+      role2: 'Fullstack Developer',
+      image: '/img/randall.jpg'
     },
     {
       name: 'Diego Duarte',
       role: 'Co-founder',
-      role2: 'FS Developer',
-      image: '/img/duarte.png'
+      role2: 'Fullstack Developer',
+      image: '/img/diego.jpg'
     },
     {
-      name: 'Humberto',
+      name: 'Humberto Trejos',
       role: 'Co-founder',
-      role2: 'BE Developer',
-      image: '/img/humberto.png'
+      role2: 'Backend Developer',
+      image: '/img/humberto.jpg'
     },
     {
       name: 'Josué Soto',
       role: 'Co-founder',
-      role2: 'BE Developer',
-      image: '/img/soto.png'
+      role2: 'Backend Developer',
+      image: '/img/soto.jpg'
     }
   ]
+
+  const colors = ['bg-[#344153]', 'bg-[#28313E]', 'bg-[#334050]', 'bg-[#283440]', 'bg-[#405164]']
 
   return (
     <section className="py-24 bg-gray-50">
@@ -50,27 +52,19 @@ const TeamSection: React.FC = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-          {teamMembers.map((member, index) => {
-            const isHighlighted = member.name === 'Randall Valenciano' || member.name === 'Humberto'
-
-            return (
-              <div
-                key={index}
-                className={`rounded-lg shadow-lg overflow-hidden transition transform hover:scale-105 ${
-                  isHighlighted ? 'bg-custom-orange' : 'bg-custom-dark'
-                }`}
-              >
-                <div className="p-6">
-                  <h3 className={`text-xl font-bold mb-1 ${isHighlighted ? 'text-white' : 'text-white'}`}>
-                    {member.name.toUpperCase()}
-                  </h3>
-                  <p className={`text-sm mb-1 ${isHighlighted ? 'text-white' : 'text-white'}`}>{member.role}</p>
-                  <p className={`text-sm mb-4 ${isHighlighted ? 'text-white' : 'text-white'}`}>{member.role2}</p>
-                </div>
-                <img src={member.image} alt={member.name} className="w-full h-48 object-cover" />
+          {teamMembers.map((member, index) => (
+            <div
+              key={index}
+              className={`flex flex-col justify-between h-full rounded-lg shadow-lg overflow-hidden transition transform hover:scale-105 ${colors[index]}`}
+            >
+              <div className="p-6 flex-grow">
+                <h3 className="text-xl font-bold mb-1 text-white">{member.name.toUpperCase()}</h3>
+                <p className="text-sm mb-1 text-white">{member.role}</p>
+                <p className="text-sm mb-4 text-white">{member.role2}</p>
               </div>
-            )
-          })}
+              <img src={member.image} alt={member.name} className="w-full h-48 object-cover" />
+            </div>
+          ))}
         </div>
       </div>
     </section>
