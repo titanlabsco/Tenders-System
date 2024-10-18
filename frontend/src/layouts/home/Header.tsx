@@ -8,7 +8,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-white flex justify-between items-center px-8 py-4 shadow-md z-50">
-      <div className="text-xl font-semibold">
+      <div className="text-3xl font-semibold">
         <span className="text-black">Titan</span>
         <span className="text-custom-orange">Labs</span>
       </div>

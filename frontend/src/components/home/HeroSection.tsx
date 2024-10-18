@@ -21,23 +21,24 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
       <div className="relative max-w-5xl mx-auto text-center md:text-left">
-        <h1 className="text-5xl font-bold leading-tight mb-8">
-          <span className="text-white">Titan</span>
-          <span className="text-custom-orange">Labs</span>. <br /> Tenders System
+        <h1 className="text-6xl font-bold leading-tight mb-8">
+          <span className="text-white">Trust</span>
+
+          <span className="text-custom-orange">Prox</span>
         </h1>
 
         <p className="text-lg text-gray-200 mb-8">
-          Our blockchain-based tender system ensures secure and transparent management for government agencies and
-          private enterprises, reducing corruption risks in contract allocation processes.
+          Our blockchain-based system enables secure property transfers using smart contracts and verified signatures.
+          Ideal for individuals and businesses seeking a reliable and transparent solution.
         </p>
         <button className="bg-white text-black py-3 px-8 rounded-md text-lg hover:bg-gray-300 transition mb-12">
-          Get Started
+          Get Started Now
         </button>
 
         <div className="flex justify-center md:justify-start gap-12">
-          <Feature icon="🔒" title="Security and Speed" />
-          <Feature icon="⚙️" title="Flexibility and Scale" />
-          <Feature icon="🤝" title="Better Collaboration" />
+          <Feature icon="🔒" title="Transaction Security" />
+          <Feature icon="🖊️" title="Verified Signatures" />
+          <Feature icon="⚙️" title="Automated Process" />
         </div>
       </div>
     </section>

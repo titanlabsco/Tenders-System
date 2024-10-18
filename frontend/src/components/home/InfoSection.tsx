@@ -6,19 +6,20 @@ const InfoSection: React.FC = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
         <div className="flex flex-col justify-center">
           <h2 className="text-4xl font-bold mb-4">
-            With the right system, <br /> great things happen.
+            With smart contracts, <br /> secure transfers happen.
           </h2>
         </div>
 
         <div className="text-lg leading-relaxed">
           <p>
-            Our blockchain-powered tender management system ensures transparent and secure processes for both government
-            agencies and private companies. It eliminates the risks of corruption by creating an immutable,
-            decentralized record of every step in the procurement process.
+            Our blockchain-powered property transfer system ensures secure and decentralized transactions for
+            individuals and companies. By using smart contracts, assets such as financial holdings, real estate, and
+            vehicles can be transferred with complete transparency and security.
           </p>
           <p className="mt-6">
-            With this solution, organizations can achieve better control, accountability, and trust from their
-            stakeholders, while making the entire process more efficient and traceable from start to finish.
+            This solution enables organizations to automate the entire process, from locking assets in the contract to
+            verifying signatures, and ensuring a smooth and reliable transfer to the designated wallets once all
+            conditions are met.
           </p>
         </div>
       </div>

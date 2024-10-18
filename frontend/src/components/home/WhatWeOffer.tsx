@@ -9,20 +9,22 @@ interface Service {
 const WhatWeOffer: React.FC = () => {
   const services: Service[] = [
     {
-      title: 'Tender Management',
+      title: 'Asset Transfer',
       description:
-        'Streamline your tender process with transparency and automation using our blockchain-powered system.',
-      icon: '📑'
+        'Securely transfer assets such as real estate, vehicles, and financial holdings through smart contracts and verified signatures.',
+      icon: '🏠'
     },
     {
-      title: 'Contract Management',
-      description: 'Securely manage contracts with easy tracking, version control, and compliance assurance.',
-      icon: '📝'
+      title: 'Signature Verification',
+      description:
+        'Ensure the authenticity of all parties involved with decentralized signature verification using Hypercycle technology.',
+      icon: '🖊️'
     },
     {
-      title: 'Supplier Management',
-      description: 'Build reliable supplier networks with real-time data, evaluation, and seamless collaboration.',
-      icon: '🤝'
+      title: 'Automated Process',
+      description:
+        'Automatically handle asset locking, signature validation, and final transfers using Trustless Work technology.',
+      icon: '⚙️'
     }
   ]
 
@@ -31,9 +33,9 @@ const WhatWeOffer: React.FC = () => {
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6">What We Offer</h2>
         <p className="text-lg text-gray-200 mb-12">
-          Explore our key solutions designed to enhance. <br />
-          Transparency, efficiency, and collaboration <br />
-          Across your organization.
+          Explore our key solutions designed to ensure <br />
+          secure, efficient, and transparent property transfers <br />
+          for individuals and organizations.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
