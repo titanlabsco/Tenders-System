@@ -1,17 +1,11 @@
 'use client'
 
 import React from 'react'
+import { Link } from 'react-scroll'
 import useMetaMask from '../../hooks/useWallet'
 
 const Header: React.FC = () => {
   const { account, connectWallet } = useMetaMask()
-
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId)
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
 
   return (
     <header className="fixed top-0 left-0 w-full bg-white flex justify-between items-center px-8 py-4 shadow-md z-50">
@@ -21,16 +15,32 @@ const Header: React.FC = () => {
       </div>
 
       <div className="flex items-center space-x-4">
-        <button onClick={() => scrollToSection('info')} className="text-black hover:text-custom-orange transition">
+        <Link
+          to="info"
+          smooth={true}
+          duration={800}
+          className="cursor-pointer text-black hover:text-custom-orange transition"
+        >
           Info
-        </button>
-        <button onClick={() => scrollToSection('services')} className="text-black hover:text-custom-orange transition">
+        </Link>
+        <Link
+          to="services"
+          smooth={true}
+          duration={800}
+          className="cursor-pointer text-black hover:text-custom-orange transition"
+        >
           Services
-        </button>
-        <button onClick={() => scrollToSection('team')} className="text-black hover:text-custom-orange transition">
+        </Link>
+        <Link
+          to="team"
+          smooth={true}
+          duration={800}
+          className="cursor-pointer text-black hover:text-custom-orange transition"
+        >
           Team
-        </button>
+        </Link>
 
+        {/* Conectar Wallet */}
         {account ? (
           <a
             href={`https://etherscan.io/address/${account}`}
