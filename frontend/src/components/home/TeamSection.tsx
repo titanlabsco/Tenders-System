@@ -44,7 +44,7 @@ const TeamSection: React.FC = () => {
   const colors = ['bg-[#344153]', 'bg-[#28313E]', 'bg-[#334050]', 'bg-[#283440]', 'bg-[#405164]']
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section id="team" className="py-24 bg-gray-50">
       <div className="relative max-w-7xl mx-auto text-center px-8 text-black">
         <h2 className="text-4xl font-bold mb-6">Meet Our Team</h2>
         <p className="text-lg mb-12">

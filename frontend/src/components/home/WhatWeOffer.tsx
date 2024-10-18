@@ -29,7 +29,7 @@ const WhatWeOffer: React.FC = () => {
   ]
 
   return (
-    <section className="bg-custom-dark text-white px-8 md:px-16 py-24">
+    <section id="services" className="bg-custom-dark text-white px-8 md:px-16 py-24">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6">What We Offer</h2>
         <p className="text-lg text-gray-200 mb-12">

@@ -15,6 +15,7 @@ const Feature: React.FC<FeatureProps> = ({ icon, title }) => (
 const HeroSection: React.FC = () => {
   return (
     <section
+      id="hero"
       className="relative min-h-screen bg-cover bg-center text-white px-16 py-32 flex items-center"
       style={{ backgroundImage: `url('/img/background.png')` }}
     >

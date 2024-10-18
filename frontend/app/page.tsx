@@ -6,6 +6,7 @@ import WhatWeOffer from '@/src/components/home/WhatWeOffer'
 import TeamSection from '@/src/components/home/TeamSection'
 import Header from '@/src/layouts/home/Header'
 import Footer from '@/src/layouts/home/Footer'
+import ScrollToTop from '@/src/components/home/ScrolltoTop'
 
 const Home: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
           <InfoSection />
           <WhatWeOffer />
           <TeamSection />
+          <ScrollToTop />
         </main>
       </div>
       <Footer />
